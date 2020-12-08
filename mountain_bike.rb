@@ -1,11 +1,11 @@
-require_relative 'roll_pack'
+require_relative 'luggage'
 
 class MountainBike
 
   attr_accessor :luggage, :weekly_rate, :daily_rate, :hourly_rate, :total_price
 
   def initialize
-    @luggage = RollPack.new
+    @luggage = Luggage.new(1)
     @weekly_rate = 90
     @daily_rate = 25
     @hourly_rate = 10

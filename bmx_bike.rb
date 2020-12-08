@@ -1,14 +1,14 @@
-require_relative 'tail_pack'
+require_relative 'luggage'
 
 class BmxBike
 
   attr_accessor :luggage, :weekly_rate, :daily_rate, :hourly_rate
 
   def initialize
-    @tail_pack = TailPack.new
-    @weekly_price = 70
-    @daily_price = 20
-    @hourly_price = 5
+    @luggage = Luggage.new(2)
+    @weekly_rate = 70
+    @daily_rate = 20
+    @hourly_rate = 5
   end
 
   def clean
