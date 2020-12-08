@@ -18,7 +18,7 @@ class RoadBike
   end
 
   def total_price
-    @total_price = (self.daily_rate * 7) + self.luggage[0].price + self.luggage[1].price
+    total_price = (self.daily_rate * 7) + self.luggage[0].price + self.luggage[1].price
   end
 
 end

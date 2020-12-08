@@ -20,7 +20,7 @@ class MountainBike
   end
 
   def total_price
-    @total_price = self.weekly_rate + self.luggage.price
+    total_price = self.weekly_rate + self.luggage.price
   end
 
 end
