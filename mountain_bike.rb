@@ -2,6 +2,8 @@ require_relative 'roll_pack'
 
 class MountainBike
 
+  attr_accessor :luggage, :daily_rate, :total_price
+
   def initialize
     @luggage = RollPack.new
     @weekly_rate = 90
