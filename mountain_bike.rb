@@ -2,7 +2,7 @@ require_relative 'roll_pack'
 
 class MountainBike
 
-  attr_accessor :luggage, :daily_rate, :total_price
+  attr_accessor :luggage, :weekly_rate, :daily_rate, :hourly_rate, :total_price
 
   def initialize
     @luggage = RollPack.new
@@ -17,6 +17,10 @@ class MountainBike
 
   def adjust_suspension
     puts "Adjusting suspension..."
+  end
+
+  def total_price
+    @total_price = self.weekly_rate + self.luggage.price
   end
 
 end

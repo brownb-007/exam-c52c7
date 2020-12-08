@@ -17,8 +17,8 @@ class RoadBike
     puts "Lubricating gears..."
   end
 
-  def daily_rate
-    @daily_rate
+  def total_price
+    @total_price = (self.daily_rate * 7) + self.luggage[0].price + self.luggage[1].price
   end
 
 end
