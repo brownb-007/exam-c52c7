@@ -4,9 +4,9 @@ class RoadBike
 
   attr_accessor :luggage, :daily_rate, :total_price
   
-  def initialize
+  def initialize(daily_rate=15)
     @luggage = [Luggage.new(3), Luggage.new(3)]
-    @daily_rate = 15
+    @daily_rate = daily_rate
   end
 
   def clean
