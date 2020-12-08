@@ -1,7 +1,7 @@
 
 class Luggage
 
-	attr_accessor :price
+	attr_reader :price
 
   def initialize(price)
   	@price = price 
