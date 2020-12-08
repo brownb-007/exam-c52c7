@@ -4,7 +4,7 @@ class Luggage
   attr_reader :price
 
   def initialize(price)
-  	@price = price 
+    @price = price 
   end
 
 end
