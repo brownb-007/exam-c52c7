@@ -2,7 +2,7 @@ require_relative 'luggage'
 
 class MountainBike
 
-  attr_accessor :luggage, :weekly_rate, :daily_rate, :hourly_rate, :total_price
+  attr_reader :luggage, :weekly_rate, :daily_rate, :hourly_rate, :total_price
 
   def initialize(weekly_rate=90, daily_rate=25,  hourly_rate=10)
     @luggage = Luggage.new(1)

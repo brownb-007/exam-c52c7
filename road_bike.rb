@@ -2,7 +2,7 @@ require_relative 'luggage'
 
 class RoadBike
 
-  attr_accessor :luggage, :daily_rate, :total_price
+  attr_reader :luggage, :daily_rate, :total_price
   
   def initialize(daily_rate=15)
     @luggage = [Luggage.new(3), Luggage.new(3)]
